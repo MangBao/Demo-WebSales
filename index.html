@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/fontawesome-free-5.12.1/fontawesome-free-5.12.1-web/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=vietnamese" rel="stylesheet">
+    <script src="./assets/Js/jquery-3.5.1.min.js"></script>
 </head>
 <body>
     <div class="app">
@@ -99,11 +100,11 @@
                             <i class="header__navbar-icon fas fa-question-circle"></i>
                             <a href="" class="header__navbar-item-link">Trợ giúp</a>
                         </li>
-                        <li class="header__navbar-item">
+                        <li class="header__navbar-item sign-up">
                             <a href="" class="header__navbar-item-link header__navbar-item--strong header__navbar-item-separate">Đăng ký</a>
                         </li>
-                        <li class="header__navbar-item">
-                            <a href="" class="header__navbar-item-link header__navbar-item--strong">Đăng nhập</a>
+                        <li class="header__navbar-item sign-in">
+                            <a href="" class="header__navbar-item-link header__navbar-item--strong ">Đăng nhập</a>
                         </li>
                     </ul>
                 </nav>
@@ -159,11 +160,18 @@
                         <i class="header__cart-icon fas fa-cart-arrow-down"></i>
                         <span class="header__cart-notice">3</span>
                         <!-- No cart: header__cart-list--no-cart -->
-                        <div class="header__cart-list header__cart-list--no-cart">
+                        <div class="header__cart-list">
                             <img src="./assets/img/no_cart.png" alt="" class="header__cart-no-cart-img">
                             <span class="header__cart-list-no-cart-msg">
                                 Chưa có sản phẩm
                             </span>
+
+                            <span class="header__cart-heading">Sản phẩm đã thêm</span>
+                            <ul class="header__cart-list-item">
+                                <li class="header__cart-item">
+                                    <img src="" alt="">
+                                </li>
+                            </ul>
                         </div>
                     </div>
 
@@ -180,11 +188,11 @@
 
         </footer>
         <!-- Modal -->
-        <!-- <div class="modal">
+        <div class="modal" id="myModal1">
             <div class="modal__overlay"></div>
-            <div class="modal__body"> -->
+            <div class="modal__body">
                 <!-- Register form -->
-                <!-- <div class="auth-form">
+                <div class="auth-form">
                     <div class="auth-form__container">
                         <div class="auth-form__header">
                             <h3 class="auth__form-heading">Đăng ký</h3>
@@ -212,7 +220,7 @@
                         </div>
 
                         <div class="auth-form__controls">
-                            <button class="btn btn--normal auth-form__controls-back">TRỞ LẠI</button>
+                            <button class="btn btn--normal auth-form__controls-back back_1">TRỞ LẠI</button>
                             <button class="btn btn--primary">ĐĂNG KÝ</button>
                         </div>
                     </div>
@@ -231,10 +239,15 @@
                             </span>
                         </a>
                     </div>
-                </div> -->
+                </div>
+            </div>
+        </div>
 
+        <div class="modal" id="myModal2">
+            <div class="modal__overlay"></div>
+            <div class="modal__body">
                 <!-- Login form -->
-                <!-- <div class="auth-form">
+                <div class="auth-form sign-in">
                     <div class="auth-form__container">
                         <div class="auth-form__header">
                             <h3 class="auth__form-heading">Đăng nhập</h3>
@@ -260,7 +273,7 @@
                         </div>
 
                         <div class="auth-form__controls">
-                            <button class="btn btn--normal auth-form__controls-back">TRỞ LẠI</button>
+                            <button class="btn btn--normal auth-form__controls-back back_2">TRỞ LẠI</button>
                             <button class="btn btn--primary">ĐĂNG NHẬP</button>
                         </div>
                     </div>
@@ -281,7 +294,9 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
+        
+        <script src="./assets/Js/myJS.js"></script>
     </div>
 </body>
 </html>

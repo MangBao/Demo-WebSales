@@ -67,6 +67,7 @@ html{
     left: 0;
     display: flex;
     animation: fadeIn linear 0.1s;
+    display: none;
 }
 .modal__overlay{
     position: absolute;
@@ -79,7 +80,7 @@ html{
     --growth-to: 1;
     position: relative;
     z-index: 1;
-    margin: auto;
+    margin: 100px 500px;
     animation: growth linear 0.1s;
 }
 /* Button style */
