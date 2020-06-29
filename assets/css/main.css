@@ -495,7 +495,6 @@
 /* Header cart */
 .header__cart{
     width: 150px;
-    text-align: center;
 }
 .header__cart-wrap{
     position: relative;
