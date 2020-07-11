@@ -1,4 +1,4 @@
-$(document).ready(function () {
+ $(document).ready(function () {
     var modal_1 = document.getElementById('myModal1');
     var modal_2 = document.getElementById('myModal2');
 

@@ -156,21 +156,23 @@
                     </div>
                     <!-- Cart layout -->
                     <div class="header__cart">
-                        <!-- <div class="header__cart-wrap">
+                        <div class="header__cart-wrap">
                         <i class="header__cart-icon fas fa-cart-arrow-down"></i>
-                        <span class="header__cart-notice">3</span> -->
-                        <div style="text-align: center;">
+                        <span class="header__cart-notice">3</span>
+                        <!-- <div style="text-align: center;">
                             <i class="header__cart-icon fas fa-cart-arrow-down"></i>
                             <span class="header__cart-notice">3</span>
-                        </div>
+                        </div> -->
                         <!-- No cart: header__cart-list--no-cart -->
                         <div class="header__cart-list">
                             <img src="./assets/img/no_cart.png" alt="" class="header__cart-no-cart-img">
                             <span class="header__cart-list-no-cart-msg">
                                 Chưa có sản phẩm
                             </span>
-
-                            <span class="header__cart-heading">Sản phẩm đã thêm</span>
+                            <div style="margin-bottom: 40px;">
+                                <span class="header__cart-heading">Sản phẩm đã thêm</span>
+                            </div>
+                            
                             <ul class="header__cart-list-item">
                                 <!-- Cart item -->
                                 <li class="header__cart-item">
@@ -180,15 +182,76 @@
                                             <h5 class="header__cart-item-name">
                                                 Bộ kem đặc trị mụn
                                             </h5>
-                                            <span class="header__cart-item-price">
-                                                2.000.000đ
+                                            <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">
+                                                    2.000.000đ
+                                                </span>
+                                                <span class="header__cart-item-multiply">
+                                                    x
+                                                </span>
+                                                <span class="header__cart-item-qnt">
+                                                    2
+                                                </span>
+                                            </div>
+                                            <input type="color" name="" id="">
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-description">
+                                                Phân loại: Bạc
                                             </span>
-                                            <span class="header__cart-item-multiply">
-                                                x
+                                            <span class="header__cart-item-remove">
+                                                Xóa
                                             </span>
-                                            <span class="header__cart-item-qnt">
-                                                2
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__cart-item">
+                                    <img class="header__cart-img" src="https://shopmyphamohuiwhoo.com/images/shopmyphamohuiwhoocom/2018/11/ohui-vi%E1%BB%87t-nam.jpg" alt="">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">
+                                                Bộ kem đặc trị mụn
+                                            </h5>
+                                            <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">
+                                                    2.000.000đ
+                                                </span>
+                                                <span class="header__cart-item-multiply">
+                                                    x
+                                                </span>
+                                                <span class="header__cart-item-qnt">
+                                                    2
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-description">
+                                                Phân loại: Bạc
                                             </span>
+                                            <span class="header__cart-item-remove">
+                                                Xóa
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__cart-item">
+                                    <img class="header__cart-img" src="https://shopmyphamohuiwhoo.com/images/shopmyphamohuiwhoocom/2018/11/ohui-vi%E1%BB%87t-nam.jpg" alt="">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">
+                                                Bộ kem đặc trị mụn
+                                            </h5>
+                                            <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">
+                                                    2.000.000đ
+                                                </span>
+                                                <span class="header__cart-item-multiply">
+                                                    x
+                                                </span>
+                                                <span class="header__cart-item-qnt">
+                                                    2
+                                                </span>
+                                            </div>
                                         </div>
                                         <div class="header__cart-item-body">
                                             <span class="header__cart-item-description">
@@ -201,7 +264,7 @@
                                     </div>
                                 </li>
                             </ul>
-                            <button class="btn btn--primary">
+                            <button class="header__cart-view-cart btn btn--primary">
                                 Xem giỏ hàng
                             </button>
                         </div>
