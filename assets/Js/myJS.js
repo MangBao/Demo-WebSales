@@ -22,12 +22,12 @@ $(document).ready(function() {
         modal_1.style.display = 'block';
     });
 
-    $('#myModal1').click(function(e) {
+    $('.s_up').click(function(e) {
         e.preventDefault();
         modal_1.style.display = 'none';
     });
 
-    $('#myModal2').click(function(e) {
+    $('.s_in').click(function(e) {
         e.preventDefault();
         modal_2.style.display = 'none';
     });

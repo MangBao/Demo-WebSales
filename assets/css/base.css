@@ -186,6 +186,10 @@ chia lm 12 cột là 100%
     align-items: center;
 }
 
+.select--input:hover .select--input__list {
+    display: block;
+}
+
 .select--input__label {
     font-size: 1.4rem;
 }
@@ -204,7 +208,12 @@ chia lm 12 cột là 100%
     border-radius: 2px;
     background-color: var(--white-color);
     padding: 8px 16px;
+    display: none;
     list-style: none;
+}
+
+.select--input__list:hover {
+    display: block;
 }
 
 .select--input__link {
@@ -212,5 +221,9 @@ chia lm 12 cột là 100%
     font-size: 1.4rem;
     color: var(--text-color);
     display: block;
-    padding: 4px;
+    padding: 4px 0;
+}
+
+.select--input__link:hover {
+    color: var(--primary-color);
 }

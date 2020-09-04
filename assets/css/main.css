@@ -976,4 +976,11 @@
 .home-filter__page {
     display: flex;
     align-items: center;
+    margin-left: auto;
+}
+
+.home-filter__page-num {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-left: 22px;
 }
