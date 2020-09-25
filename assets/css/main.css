@@ -17,6 +17,10 @@
     margin: 4px 0 0 0;
 }
 
+.class_none {
+    display: none !important;
+}
+
 .header__navbar-item {
     margin: 0 0.8rem;
     position: relative;

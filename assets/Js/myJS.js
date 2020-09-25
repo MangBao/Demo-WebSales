@@ -1,34 +1,69 @@
-$(document).ready(function() {
-    var modal_1 = document.getElementById('myModal1');
-    var modal_2 = document.getElementById('myModal2');
+window.onload = () => {
+    var modal = document.getElementById('myModal');
+    var sign_up = document.getElementById('sign-up');
+    var sign_in = document.getElementById('sign-in');
+    var s_up = document.getElementById('s-up');
+    var s_in = document.getElementById('s-in');
+    var back_1 = document.getElementsByClassName('back')[0];
+    var back_2 = document.getElementsByClassName('back')[1];
 
-    $('.sign-up').click(function(e) {
-        e.preventDefault();
-        modal_1.style.display = 'block';
-    });
 
-    $('.sign-in').click(function(e) {
-        e.preventDefault();
-        modal_2.style.display = 'block';
-    });
+    var user = [];
 
-    $('.back_1').click(function(e) {
+    s_in.onclick = (e) => {
         e.preventDefault();
-        modal_2.style.display = 'block';
-    });
+        var a = $('#a').val();
+        var b = $('#b').val();
 
-    $('.back_2').click(function(e) {
-        e.preventDefault();
-        modal_1.style.display = 'block';
-    });
+        user[0] = {
+            username: 'admin',
+            password: '1234'
+        }
+        for (var i = 0; i <= user.length; i++) {
+            if ((a == user[0].username) && (b == user[0].password)) {
+                // $('#ad').css('display', 'block');
+                $('li').removeClass('class_none');
+                sign_up.style.display = 'none';
+                sign_in.style.display = 'none';
+                modal.style.display = 'none';
+            }
+        }
+    };
 
-    $('.s_up').click(function(e) {
+    function Login(){
+        // for (var i = 0; i <= user.length; i++) {
+        //     if ((a == user[0].username) && (b == user[0].password)) {
+        //         // $('#ad').css('display', 'block');
+        //         $('li').removeClass('class_none');
+        //         sign_up.style.display = 'none';
+        //         sign_in.style.display = 'none';
+        //         modal.style.display = 'none';
+        //     }
+        // }
+    }
+    sign_up.onclick = (e) => {
         e.preventDefault();
-        modal_1.style.display = 'none';
-    });
+        modal.style.display = 'block';
+        $('#s_in').css('display', 'none');
+    };
 
-    $('.s_in').click(function(e) {
+    sign_in.onclick = (e) => {
         e.preventDefault();
-        modal_2.style.display = 'none';
-    });
-});
+        modal.style.display = 'block';
+        $('#s_up').css('display', 'none');
+    };
+
+    back_1.onclick = (e) => {
+        e.preventDefault();
+        $('#s_in').css('display', 'block');
+        $('#s_up').css('display', 'none');
+    };
+
+    back_2.onclick = (e) => {
+        e.preventDefault();
+        $('#s_in').css('display', 'none');
+        $('#s_up').css('display', 'block');
+    };
+
+
+}

@@ -102,13 +102,13 @@
                             <i class="header__navbar-icon far fa-question-circle"></i>
                             <a href="" class="header__navbar-item-link">Trợ giúp</a>
                         </li>
-                        <li class="header__navbar-item sign-up">
+                        <li class="header__navbar-item" id="sign-up">
                             <a href="" class="header__navbar-item-link header__navbar-item--strong header__navbar-item-separate">Đăng ký</a>
                         </li>
-                        <li class="header__navbar-item sign-in">
+                        <li class="header__navbar-item" id="sign-in">
                             <a href="" class="header__navbar-item-link header__navbar-item--strong ">Đăng nhập</a>
                         </li>
-                        <!-- <li class="header__navbar-item header__navbar-user">
+                        <li class="class_none header__navbar-item header__navbar-user" id="">
                             <img src="https://instagram.fsgn2-4.fna.fbcdn.net/v/t51.2885-19/s320x320/117241187_4231683836905590_111393809301897367_n.jpg?_nc_ht=instagram.fsgn2-4.fna.fbcdn.net&_nc_ohc=nTFnClaXCdYAX86-8NL&oh=a84e152f50522c10a9409944cff63962&oe=5F5F8CD2" alt="" class="header__navbar-user-img">
                             <span class="header__navbar-user-name">Mang Bảo</span>
 
@@ -126,7 +126,7 @@
                                     <a href="">Đăng xuất</a>
                                 </li>
                             </ul>
-                        </li> -->
+                        </li>
                     </ul>
                 </nav>
                 <!-- Header width search -->
@@ -367,11 +367,11 @@
 
     </footer>
     <!-- Modal -->
-    <div class="modal" id="myModal1">
+    <div class="modal" id="myModal">
         <div class="modal__overlay">
-            <div class="modal__body" id="s_in">
+            <div class="modal__body">
                 <!-- Register form -->
-                <div class="auth-form">
+                <div class="auth-form" id="s_up">
                     <div class="auth-form__container">
                         <div class="auth-form__header">
                             <h3 class="auth__form-heading">Đăng ký</h3>
@@ -399,8 +399,8 @@
                         </div>
 
                         <div class="auth-form__controls">
-                            <button class="btn btn--normal auth-form__controls-back back_1">TRỞ LẠI</button>
-                            <button class="btn btn--primary">ĐĂNG KÝ</button>
+                            <button class="btn btn--normal auth-form__controls-back back">TRỞ LẠI</button>
+                            <button class="btn btn--primary" id="s-up">ĐĂNG KÝ</button>
                         </div>
                     </div>
 
@@ -419,16 +419,8 @@
                         </a>
                     </div>
                 </div>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="modal" id="myModal2">
-        <div class="modal__overlay" id="s_in">
-            <div class="modal__body">
                 <!-- Login form -->
-                <div class="auth-form sign-in">
+                <div class="auth-form" id="s_in">
                     <div class="auth-form__container">
                         <div class="auth-form__header">
                             <h3 class="auth__form-heading">Đăng nhập</h3>
@@ -437,10 +429,10 @@
 
                         <div class="auth-form__form">
                             <div class="auth-form__group">
-                                <input type="text" class="auth-form__input" placeholder="Nhập email của bạn">
+                                <input type="text" class="auth-form__input" id="a" placeholder="Nhập email của bạn">
                             </div>
                             <div class="auth-form__group">
-                                <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu của bạn">
+                                <input type="password" class="auth-form__input" id="b" placeholder="Nhập mật khẩu của bạn">
                             </div>
 
                         </div>
@@ -454,8 +446,8 @@
                         </div>
 
                         <div class="auth-form__controls">
-                            <button class="btn btn--normal auth-form__controls-back back_2">TRỞ LẠI</button>
-                            <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                            <button class="btn btn--normal auth-form__controls-back back">TRỞ LẠI</button>
+                            <button class="btn btn--primary" id="s-in">ĐĂNG NHẬP</button>
                         </div>
                     </div>
 
@@ -476,7 +468,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
     <script src="./assets/Js/myJS.js"></script>
