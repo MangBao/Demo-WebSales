@@ -29,18 +29,21 @@ window.onload = () => {
             }
         }
     };
-
-    function Login(){
-        // for (var i = 0; i <= user.length; i++) {
-        //     if ((a == user[0].username) && (b == user[0].password)) {
-        //         // $('#ad').css('display', 'block');
-        //         $('li').removeClass('class_none');
-        //         sign_up.style.display = 'none';
-        //         sign_in.style.display = 'none';
-        //         modal.style.display = 'none';
-        //     }
-        // }
+    s_up.onclick = (e) => {
+        var a = $('#')
     }
+
+    // function Login() {
+    //     for (var i = 0; i <= user.length; i++) {
+    //         if ((a == 'admin' /*user[0].username*/ ) && (b == '123456' /*user[0].password*/ )) {
+    //             $('#ad').css('display', 'block');
+    //             $('li').removeClass('class_none');
+    //             sign_up.style.display = 'none';
+    //             sign_in.style.display = 'none';
+    //             modal.style.display = 'none';
+    //         }
+    //     }
+    // }
     sign_up.onclick = (e) => {
         e.preventDefault();
         modal.style.display = 'block';
